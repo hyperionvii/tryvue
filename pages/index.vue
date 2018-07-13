@@ -10,7 +10,7 @@
       <ul class="list pl0 ml0 center mw6 ba b--light-silver br2">
         <li v-for="(todo, index) in todos" :key="index" class="flex items-center ph3 pv3 bb b--light-silver">
           <span class="flex-auto">{{todo.id+1}}) {{todo.text}}</span>
-          <button @click="remove(todo)"><img src="https://icon.now.sh/delete"></button>
+          <button v-on:click="remove(todo)"><img src="https://icon.now.sh/delete"></button>
         </li>
       </ul>
     </article>

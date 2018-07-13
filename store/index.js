@@ -25,7 +25,7 @@ export const actions = {
   },
 
   async remove({commit}, todo) {
-    const res = await axios.delete(`https://todos-hzdoayyvaw.now.sh/todos${todo.id}`)
+    const res = await axios.delete(`https://todos-hzdoayyvaw.now.sh/todos/${todo.id}`)
 
     commit('remove', todo)
   }
